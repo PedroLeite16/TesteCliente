@@ -1,0 +1,26 @@
+<section class="container">
+
+  <h2 class="titulo">Editar Pessoa</h2>
+
+  <form class="example-form" >
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Nome</mat-label>
+      <input matInput name="nome" id="nome" [(ngModel)]="nome">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Endereço</mat-label>
+      <input matInput name="endereco" id="endereco" [(ngModel)]="endereco">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Telefone</mat-label>
+      <input matInput name="telefone" id="telefone" [(ngModel)]="telefone" maxlength="13">
+    </mat-form-field>
+
+    <div class="botao-wrapper">
+      <button class="botao" mat-raised-button (click)="editar()">Editar</button>
+    </div>
+  </form>
+
+</section>

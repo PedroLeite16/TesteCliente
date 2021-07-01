@@ -1,0 +1,28 @@
+<section class="container">
+
+  <h2 class="titulo">Nova Pessoa</h2>
+
+  <form class="example-form" (ngSubmit)="adicionar()">
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Nome</mat-label>
+      <input matInput placeholder="Digite o nome" id="nome" [(ngModel)]="nome" name="nome">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Endereço</mat-label>
+      <input matInput placeholder="Digite o endereco" id="endereco" type="text" [(ngModel)]="endereco" name="endereco">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Telefone</mat-label>
+      <input matInput placeholder="00 00000-0000" type="tel" id="telefone"
+       [(ngModel)]="telefone" name="telefone" maxlength="13">
+    </mat-form-field>
+
+    <div class="botao-wrapper">
+      <button class="botao" mat-raised-button type="submit">Adicionar</button>
+    </div>
+
+  </form>
+
+</section>

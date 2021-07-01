@@ -1,1 +1,39 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --primary: #369c38;
+  --secondary: #132A13;
+  --padding: 15px;
+  --cinza : #405040;
+  --cinza-claro: #dedede;
+}
+
+a {
+  color: inherit;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.botao {
+  background-color: var(--primary);
+  color: white;
+  display: block;
+  flex: 1;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 0.5em;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  margin-right: 10px;
+}
+
+.titulo {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 16px;
+}
